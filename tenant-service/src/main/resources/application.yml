@@ -1,0 +1,16 @@
+multiple:
+  mysql:
+    enabled: false
+  redis:
+    enabled: false
+  mongo:
+    enabled: false
+spring:
+  jpa:
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl

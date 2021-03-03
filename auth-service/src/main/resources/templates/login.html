@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>登录</title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.css" th:href="@{/webjars/bootstrap/css/bootstrap.css}" />-->
+</head>
+<body>
+<h1>這是登錄頁面</h1>
+<!--<div th:if="${error}">-->
+<!--无效的用户名或密码.-->
+<!--</div>-->
+<form th:action="@{/login}" method="post">
+    <input type="text" name="username" placeholder="name">
+    <input type="password" name="password">
+    <input type="submit" name="submit" value="提交">
+</form>
+</body>

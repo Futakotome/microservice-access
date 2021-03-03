@@ -1,0 +1,15 @@
+server:
+  port: 9000
+  servlet:
+    context-path: /auth
+spring:
+  application:
+    name: authentication-service
+  profiles:
+    active: dev
+  thymeleaf:
+    cache: false
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
